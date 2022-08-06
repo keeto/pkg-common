@@ -9,12 +9,12 @@ There are separate ESLint configs for TypeScript and ES6 packages:
 ```js
 // .eslintrc.js for TypeScript
 module.exports = {
-  extends: ['@keeto/pkg-common/eslint']
+  extends: require.resolve('@keeto/pkg-common/eslint')
 };
 
 // .eslintrc.js for ES6
 module.exports = {
-  extends: ['@keeto/pkg-common/eslint/es6']
+  extends: require.resolve('@keeto/pkg-common/eslint/es6')
 };
 ```
 
