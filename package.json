@@ -4,7 +4,8 @@
   "description": "Common configs for building packages",
   "main": "index.js",
   "scripts": {
-    "test": "yarn test"
+    "fix": "eslint --fix .",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
