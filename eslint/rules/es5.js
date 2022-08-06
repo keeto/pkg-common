@@ -174,34 +174,6 @@ module.exports = {
     'no-unsafe-negation': 'error',
     // disallow comparisons with the value NaN
     'use-isnan': 'error',
-    // ensure JSDoc comments are valid
-    'valid-jsdoc': [
-      'error',
-      {
-        // Consistent tagging
-        prefer: {
-          arg: 'param',
-          argument: 'param',
-          constant: 'const',
-          returns: 'return',
-        },
-
-        // Primitives lowercase, Objects uppercase
-        preferType: {
-          object: 'Object',
-          array: 'Array',
-          String: 'string',
-          Boolean: 'boolean',
-          Number: 'number',
-        },
-
-        // Various flags
-        requireReturn: false,
-        requireReturnType: true,
-        requireParamDescription: false,
-        requireReturnDescription: false,
-      },
-    ],
     // ensure that the results of typeof are compared against a valid string
     'valid-typeof': 'error',
     // Avoid code that looks like two expressions but is actually one

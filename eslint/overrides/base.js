@@ -27,15 +27,6 @@ module.exports = {
         'max-len': 0,
         'padded-blocks': 0,
         'no-console': 'warn',
-
-        'dot-notation': 'off',
-        '@typescript-eslint/dot-notation': [
-          'error',
-          {
-            allowKeywords: true,
-            allowPrivateClassPropertyAccess: true,
-          },
-        ],
       },
     },
 

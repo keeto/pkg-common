@@ -32,6 +32,7 @@ module.exports = {
         arg: 'param',
         argument: 'param',
         constant: 'const',
+        return: 'returns',
       },
     },
   },

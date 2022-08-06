@@ -13,4 +13,24 @@ module.exports = {
     sourceType: 'module',
     project: 'tsconfig.json',
   },
+
+  overrides: [
+    // Overrides for test files
+    {
+      files: ['test/**/*.ts', 'test/**/*.js', 'test/**/*.tsx', 'test/**/*.jsx'],
+      env: {
+        mocha: true,
+      },
+      rules: {
+        'dot-notation': 'off',
+        '@typescript-eslint/dot-notation': [
+          'error',
+          {
+            allowKeywords: true,
+            allowPrivateClassPropertyAccess: true,
+          },
+        ],
+      },
+    },
+  ],
 };
